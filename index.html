@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Funny Prank Sounds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fff8eb 0%, #eef1ff 100%);
+            position: relative;
+        }
+        
+        .wave {
+            position: absolute;
+            border: 2px solid rgba(255, 172, 130, 0.3);
+            border-radius: 50%;
+            width: 200vw;
+            left: -50vw;
+            z-index: 1;
+        }
+        
+        .wave-1 { top: 5vh; height: 40vh; }
+        .wave-2 { top: 10vh; height: 50vh; }
+        .wave-3 { top: 15vh; height: 60vh; }
+        .wave-4 { bottom: 15vh; height: 60vh; }
+        .wave-5 { bottom: 10vh; height: 50vh; }
+        .wave-6 { bottom: 5vh; height: 40vh; }
+        
+        .main-container {
+            position: relative;
+            z-index: 2;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .title {
+            color: #F26430;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .navigation {
+            margin-top: 2rem;
+        }
+        
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 1.25rem;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .dot-1 { background-color: #1a237e; }
+        .dot-2 { background-color: #00bfa5; }
+        .dot-3 { background-color: #4fc3f7; }
+        .dot-4 { background-color: #ffb74d; }
+        
+        .next-button {
+            background-color: #F26430;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 0.75rem 2.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(242, 100, 48, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .next-button:hover, .next-button:focus {
+            background-color: #e05a28;
+            color: white;
+        }
+        
+        .next-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(242, 100, 48, 0.3);
+            background-color: #d65324;
+        }
+        
+        /* Bootstrap responsive text sizes */
+        @media (max-width: 576px) {
+            .title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (min-width: 576px) {
+            .title {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .title {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .title {
+                font-size: 4rem;
+            }
+        }
+        
+        /* Height-based responsive adjustments */
+        @media (max-height: 500px) {
+            .navigation {
+                margin-top: 1rem;
+            }
+            
+            .dots {
+                margin-bottom: 0.75rem;
+            }
+            
+            .next-button {
+                padding: 0.5rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background waves -->
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+    <div class="wave wave-4"></div>
+    <div class="wave wave-5"></div>
+    <div class="wave wave-6"></div>
+    
+    <!-- Main content -->
+    <div class="container main-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="title">Welcome</h1>
+                
+                <div class="navigation">
+                    <div class="dots">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                        <div class="dot dot-4"></div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn next-button" id="nextButton" onclick="window.location.href='secound.html'">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+   
+</body>
+</html>
